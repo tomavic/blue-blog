@@ -1,0 +1,8 @@
+<div class="card" *ngFor="let item of posts">
+    <img src="assets/img/mock1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">{{item.description}}</p>
+        <a (click)="view(item)" class="btn btn-primary">Continue reading</a>
+    </div>
+</div>
